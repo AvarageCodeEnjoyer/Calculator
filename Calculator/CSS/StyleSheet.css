@@ -62,15 +62,15 @@ body
 
 .button:hover, #clear:hover, .operator:hover  
     {
-        animation: button 1s ease-in infinite alternate-reverse backwards;
+        animation: button 0.8s ease-in infinite alternate-reverse backwards;
     }
     
     
 
 @keyframes button
     {
-        0%{transform: scale(1.05, 1.05); background-image: radial-gradient( violet, indigo); filter: brightness(100%); color: 20%}
-        100%{transform: scale(1); background-image: radial-gradient( violet, indigo); filter: brightness(75%); color: 100%}
+        0%{transform: scale(1.06); background-image: radial-gradient( violet, indigo); filter: brightness(100%)}
+        100%{transform: scale(1); background-image: radial-gradient( violet, indigo); filter: brightness(75%)}
     }
 
 
