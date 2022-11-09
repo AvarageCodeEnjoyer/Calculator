@@ -1,0 +1,105 @@
+/* @font-face 
+    {
+        font-family: lcd-solid-font; 
+        src: url('/lcd-solid-font/LcdSolid-VPzB.ttf')
+    } */
+
+*
+    {
+        font-family: 'Trispace', sans-serif;        
+    }
+
+body        
+    {
+        background-color: rgba(21, 117, 177, 0.286);
+    }
+ 
+#container
+    {
+        width: 350px;
+        min-height: 450px;
+        /* height: fit-content; */
+        position: absolute;
+        top: 15%;
+        left: 38%;
+        border: 5px solid black;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, rgb(119, 33, 158), rgb(168, 36, 154));
+        padding: 7px 7px 0px 7px;  
+    }
+
+#result
+    {
+        text-align: end;
+        height: 93px;
+        line-height: 30px;
+        width: 340px;
+        font-size: 2rem;
+        border-radius: 20px;
+        margin-bottom: 7px;
+        margin-left: 3px;
+        resize: none;
+
+    }
+
+.result
+    {
+        width: 100%;
+        resize: both;
+        min-height: 55px;
+        line-height: 20px;
+        overflow: none;
+    }
+
+.button
+    {
+        font-size: 2rem;
+        height: 60px;
+        border-radius: 20px;
+        background-color: rgb(149, 124, 172);
+        margin: 1px;
+        /* transition: 0.1s; */
+    }
+
+.button:hover, #clear:hover, .operator:hover  
+    {
+        animation: button 0.8s ease-in infinite alternate-reverse backwards;
+    }
+    
+    
+
+@keyframes button
+    {
+        0%{transform: scale(1.06, 1.06); background-image: radial-gradient( violet, indigo); filter: brightness(100%)}
+        100%{transform: scale(1); background-image: radial-gradient( violet, indigo); filter: brightness(75%)}
+    }
+
+
+#buttons
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 10px;
+    }
+
+.operator
+    {
+        height: 60px;
+        font-size: 2rem;
+        background-color: rgba(255, 199, 96, 0.627);
+        border-radius: 20px;
+        margin: 1px;
+    }
+
+.operator:hover 
+    {
+        background-color: rgba(137, 43, 226, 0.716);
+        transition: 0.3s;
+
+    }
+
+
+.equal-sign
+    {
+        background-color: rgba(144, 0, 255, 0.621);
+    }
